@@ -1,0 +1,292 @@
+body{
+    margin: 0;
+    background-image: url(./media/coca-cola-logo.png);
+   background-repeat: no-repeat;
+background-size: 800px;
+background-attachment: fixed;
+background-position: center; 
+
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  flex: 1;
+  margin-right: 10px;
+  margin-top: 12px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  text-align: center;
+  padding: 1rem;
+}
+nav {
+    background-color: rgb(230,30,43);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  img{
+    height: 80px;
+  }
+  button{
+
+    color: rgb(246, 241, 241);
+    background-color:rgb(230,30,43) ;
+    border-color: white;
+    margin-top: 20px;
+    margin-left: 25rem;
+    height:40px;
+    width: 250px;
+    border-radius: 50px;
+   
+  }
+  footer{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(230,30,43);
+    color: white;
+    right: 0;
+    height: 15rem;
+  }
+  .tt{
+    margin-top: 3rem;
+    height: 120px;
+    position: absolute;
+  }
+
+.ca{
+    position: absolute;
+    margin-left: 250px;
+    
+}
+.cd{
+    position: absolute;
+    right: 2rem;
+}
+.uu{
+    
+    margin-left: 1260px;
+    position: absolute;
+    top: 60px;
+  }
+.cont1{
+    width: 100%;
+    height: 800px;
+    background-color: rgb(243, 250, 250);
+}
+.po{
+    width: 50%;
+    height: 400px;
+    background-image: url(./media/back3.png);
+    
+}
+.pp{
+    position: absolute;
+    right: 0px;
+    top: 81px;
+    width: 50%;
+    height: 320px;
+    background-image: url(./media/back4.png);
+}
+.pq{
+    position: absolute;
+    width: 50%;
+    height: 400px;
+    background-image: url(./media/back1.jpg);
+}
+.pr{
+    position: absolute;
+    right: 0px;
+    top: 400px;
+    width: 50%;
+    height: 400px;
+    background-image: url(./media/back2.jpg);
+}
+.hd{
+    position: absolute;
+
+}
+.outer{
+    width: 100%;
+    height: 700px;
+    background-color: rgba(245, 248, 248, 0);
+}
+.rt{
+    width: 49%;
+    height: 700px;
+    background-image: url(./media/pic1.png);
+float: left;    
+padding: 8px;
+
+}
+.yr{
+    width: 49%;
+    height: 703px;
+    background-image: url(./media/pic2.png);
+float: left;
+padding: 7px;
+}
+.outer2{
+    width: 100%;
+    height: 700px;
+    background-color: rgba(245, 248, 248, 0);
+}
+.we{
+   position: absolute;
+   left: 988px;
+   top: 1580px;
+}
+.wr{
+    position: absolute;
+    left: 978px;
+    top: 2100px;
+    padding: 8px;
+}
+.outer3{
+    width: 100%;
+    height: 700px;
+    background-color: rgba(25, 169, 169, 0);
+}
+button:hover{
+    background-color: #fff;
+    color:red;
+}
+li:hover{
+    background-color: rgb(202, 33, 33);
+}
+.oy{
+  position: absolute;
+  width: 490px;
+  height: 320px;
+  background-color: rgb(97, 96, 95);
+  margin-left: 980px;
+ top: 2585px;
+ padding: 8px;
+ border-radius: 20px;
+ transition: 0.5s;
+ box-shadow: 10px 10px 5px 0px rgba(11, 10, 10, 0.75);
+}
+.jh{
+  width: 150px;
+  height: 40px;
+  border-radius: 50px;
+  background-color: red;
+  color: aliceblue;
+  text-shadow: 10px;
+  font-weight:bolder;
+}
+.jh:hover{
+  background-color: aliceblue;
+  color: #d83133;
+}
+.oy:hover{
+  transform: scale(1.1);
+}
+
+
+/* pepsi animation */
+
+
+.card{
+  position: relative;
+  width: 600px;
+  height: 350px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  transition: 0.5s;
+}
+.card .circle{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.card .circle::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #d83133;
+  clip-path: circle(120px at center);
+  transition: 1s;
+}
+.card:hover .circle::before{
+  background: #0065c3;
+  clip-path: circle(400px at center);
+}
+.card img{
+  position: absolute;
+  top: 51%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  height: 510px;
+  pointer-events: none;
+  transition: 0.5s;
+}
+.card:hover img{
+  left: 78%;
+  height: 800px;
+}
+.card .content{
+  position: relative;
+  width: 50%;
+  left: 20%;
+  padding: 20px 20px 20px 40px;
+  transition: 0.5s;
+  opacity: 0;
+  visibility: hidden;
+}
+.card:hover .content{
+  left: 0;
+  opacity: 1;
+  visibility: visible;
+}
+.card .content h2{
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 2em;
+  line-height: 1em;
+  margin-bottom: 5px;
+}
+.card .content h3{
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1em;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+.card .content p{
+  color: #fff;
+}
+.card .content a{
+  position: relative;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background: #fff;
+  color: #111;
+  margin-top: 10px;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 700;
+  transition: 0.5s;
+}
